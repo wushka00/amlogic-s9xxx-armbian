@@ -12,7 +12,7 @@ on:
       set_branch:
         description: "Branch: edge / current / legacy"
         required: false
-        default: "edge"
+        default: "current"
       set_release:
         description: "Release: jammy / focal / bullseye"
         required: false
@@ -28,7 +28,7 @@ on:
       armbian_soc:
         description: "Set Amlogic SoC."
         required: false
-        default: "all"
+        default: "s905w"
       armbian_kernel:
         description: "Set kernel version."
         required: false
@@ -49,7 +49,7 @@ on:
     #- cron: "0 17 * * 0"
 
 env:
-  TZ: Asia/Shanghai
+  TZ: Australia/Sydney
 
 jobs:
   build:
